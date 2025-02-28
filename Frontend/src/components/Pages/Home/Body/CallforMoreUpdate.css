@@ -1,56 +1,87 @@
-.cta-section-wrapper{
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("http://woocommerce.ahaanmedia.com/wp-content/uploads/2025/01/Untitled-design-10-1.png") !important;
-  background-size: cover !important;
+.cta-section-wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), 
+              url("http://woocommerce.ahaanmedia.com/wp-content/uploads/2025/01/Untitled-design-10-1.png") no-repeat center center;
+  background-size: cover;
 }
+
 .cta-section {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; /* Aligns content to the right */
-    padding: 50px 0;
-  }
-  
-  .cta-image {
-    display: none; /* Hidden since background image is applied to section */
-  }
-  
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Aligns content to the right */
+}
+
+.cta-image {
+  display: none; /* Background image applied to section instead */
+}
+
+.cta-content {
+  color: white;
+  text-align: left;
+  max-width: 500px;
+}
+
+.cta-content h2 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.cta-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.cta-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  outline: none;
+}
+
+.cta-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.cta-button {
+  background-color: #4339f2;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 25px;
+  display: block;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #2b2d79;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .cta-content {
-    color: white;
-    text-align: left;
-    
-    /* You can uncomment or modify the width as necessary */
-    /* width: 50%; */
+    text-align: center;
+    width: 100%;
+    padding: 20px;
   }
-  
+
   .cta-content h2 {
-    font-size: 3.2rem;
-    font-weight: bold;
-  
+    font-size: 2.5rem;
   }
-  
+
   .cta-content p {
-    font-size: 1rem;
-    margin-bottom: 20px;
+    font-size: 0.9rem;
   }
-  
-  .cta-input {
-    width: 100%;
-    padding: 12px;
-    border-radius: 25px;
-    border: none;
-    font-size: 1rem;
-  }
-  
+
   .cta-button {
-    background-color: #4339f2;
-    border: none;
-    padding: 12px 24px;
-    font-size: 1rem;
-    border-radius: 25px;
-    display: block;
-    width: 100%;
+    font-size: 0.9rem;
   }
-  
-  .cta-button:hover {
-    background-color: #2b2d79;
-  }
+}

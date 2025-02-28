@@ -1,0 +1,95 @@
+/* ProductTabs.css */
+
+/* Container around the tabs */
+.product-tabs-wrapper{
+    background: #EFEFEF;
+    padding: 50px;
+}
+.product-tabs-container {
+    width: 100%; /* adjust if needed */
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Tabs styling */
+  .product-tabs .nav-link {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    border: none !important;
+    border-radius: 0;
+    margin-right: 20px; /* spacing between tab items */
+    text-transform: none;
+    padding: 8px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .product-tabs .nav-link:hover {
+    color: #6c63ff; /* hover color for tab text */
+  }
+  
+  .product-tabs .nav-link.active {
+    color: #6c63ff; /* active tab text color */
+    border-bottom: 3px solid #6c63ff !important; /* underline the active tab */
+    background: none !important;
+  }
+  
+  /* Tab Content Wrapper */
+  .tab-content-wrapper {
+    border-top: none; /* remove top border to connect with tabs */
+    padding: 20px;
+    border-radius: 0 0 4px 4px;
+  }
+  
+  /* Headings inside tab content */
+  .tab-content-wrapper h5 {
+    font-size: 18px;
+    color: #000 !important;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+  }
+  
+  /* Paragraph text */
+  .tab-content-wrapper p {
+    font-size: 15px;
+    color: #000 !important;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /* Unordered list for specifications, etc. */
+  .tab-content-wrapper ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+  
+  .tab-content-wrapper ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /* Green check icon as bullet (optional) */
+  .tab-content-wrapper ul li::before {
+    position: absolute;
+    left: 0;
+    color: #28a745; /* green check color */
+  }
+  
+  /* Link styling */
+  .tab-content-wrapper a {
+    color: #6c63ff;
+    text-decoration: none;
+  }
+  
+  .tab-content-wrapper a:hover {
+    text-decoration: underline;
+  }
+  

@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import "./BestOffer.css";
 import { PiHandbagBold } from "react-icons/pi";
 import productsData from "../../../products.json";
+import { Link } from 'react-router-dom';
 
 const bestofferssections = [
   {
@@ -82,7 +83,9 @@ const BestOffer = () => {
                         hoveredProduct === product.id ? "visible" : ""
                       }`}
                     >
+                      <Link to={`/product-details/${product.id}`}>
                       <Button className="buy-now-btn">Buy Now</Button>
+                      </Link>
                       <Button className="cart-btn">
                         <PiHandbagBold />
                       </Button>
